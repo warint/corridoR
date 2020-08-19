@@ -11,12 +11,12 @@
 
 corridoR is an R wrapper to easily access the Northern Corridor project
 database. The project was developed in order to analyse the potential
-impact of the Northern Corridor on Canadian economy and global maritime
-traffic. In order to do so, we took more than 20 000 ship voyages
+impacts of the Northern Corridor on the Canadian economy and global maritime
+traffic. In order to do so, we took more than 20,000 ship voyages
 passing through the Panama Canal and calculated their marine distances.
 
 To analyse the applicability and the profitability of the Canadian
-Northwest Passage, we took the same 20 000 routes and make them passed
+Northwest Passage, we took the same 20,000 routes and make them passed
 hypothetically through the Canadian Arctic. We then compared the
 distances to see which trips were shorter by the Northern Corridor.
 Distances are in nautical miles.
@@ -114,5 +114,4 @@ corridor_data(country = "", port = "HOUSTON") # It generates a data frame of the
 
 The author would like to thank the Center for Interuniversity Research
 and Analysis of Organizations (CIRANO, Montreal) for its support, as
-well as Thibault Senegas, Marine Leroi and Martin Paquette at SKEMA
-Global Lab in AI. The usual caveats apply.
+well as Marine Leroi and Martin Paquette at CIRANO. The usual caveats apply.
