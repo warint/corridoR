@@ -83,7 +83,7 @@ library(corridoR)
 A user needs to enter the ISO code of a country. To have access to this code, the following function provides this information.
 
 ```{r, eval = FALSE}
-corridor_country() # A list of all countries will be produced
+corridor_country() # A list of all countries ISO code will be produced
 
 corridor_country(country = "Canada") # The ISO code for Canada will be produced
 
@@ -99,11 +99,9 @@ Be careful, you must put the empty arguments ("") to collect the data!
 ```{r,eval=FALSE}
 corridor_data(country = "", port = "") # It generates a data frame of the complete dataset
 
-corridor_data(country = "CAN", port = "") # It generates a data frame of the all the ships voyages inclunding a Canadian port
+corridor_data(country = "CAN", port = "") # It generates a data frame of all the ships voyages containing a Canadian port
 
-corridor_data(country = "", port = "HOUSTON") # It generates a data frame of the all the ships voyages inclunding Houston.
-
-
+corridor_data(country = "", port = "HOUSTON") # It generates a data frame of all the ships voyages containing Houston.
 ```
 
 ### Acknowledgments

@@ -11,7 +11,9 @@ Imports:
     dplyr,
     stringr,
     reshape2,
-    magrittr
+    magrittr,
+    readr,
+    curl
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
