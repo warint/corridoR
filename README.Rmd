@@ -90,7 +90,19 @@ corridor_country(country = "Canada") # The ISO code for Canada will be produced
 corridor_country("Canada") # The ISO code for Canada will be produced
 ```
 
-### Step 2: Getting the data
+### Step 2: Getting the port's name
+
+To have access to the ports included in the data, the following function provides this information.
+
+```{r, eval = FALSE}
+corridor_port() # A list of all existing ports will be produced
+
+corridor_port(country = "HOUS") # The port's name containing HOUS will be produced
+
+corridor_port("HOUSTON") # The port's name containing HOUS will be produced
+```
+
+### Step 3: Getting the data
 
 Once the user knows the ISO code , s.he can collect the data in a very easy way through this function:
 
