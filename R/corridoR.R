@@ -13,12 +13,10 @@
 #'
 #' @export
 #'
-#' @import gsheet
 #' @import dplyr
 #' @import stringr
 #' @import reshape2
 #' @import magrittr
-#' @import readr
 #' @import curl
 #'
 #'
@@ -119,20 +117,22 @@ corridoR_countries_natural_language <- readr::read_csv(csv_file)
 # Function 3
 # If the user does not know the port's name included in the data, s.he has access to the answer in natural language through this query
 
+
 #' corridor_port
 #'
 #' @description This function allows you to find and search port's name included in the Northern Corridor data. 
-#' If no argument is filed, all ports included in the Northern Corridor data will be displayed.
+#' If no argument is filled, all ports included in the Northern Corridor data will be displayed.
 #' 
 #' @param port The name of the port
 #'
-#' @return Port's name included in Northern Corridor data
+#' @return Port's name included in the Northern Corridor data
 #' @export
 #'
 #' @examples
-#'myport <- corridor_port()
-#'myport <- corridor_port(port = "HOUSTON")
-#'myport <- corridor_port("HOUSTON")
+#' myport <- corridor_port()
+#' myport <- corridor_port(port = "HOUSTON")
+#' myport <- corridor_port("HOUSTON")
+#' 
 
 corridor_port <- function(port) {
   

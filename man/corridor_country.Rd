@@ -14,7 +14,7 @@ Country's ISO code.
 }
 \description{
 This function allows you to find and search the right country code associated with the Northern Corridor Data.
-If no argument is filed, all indicators will be displayed.
+If no argument is filed, all countries' ISO code will be displayed.
 }
 \examples{
 mycountry <- corridor_country()

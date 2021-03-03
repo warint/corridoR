@@ -11,12 +11,12 @@
 
 corridoR is an R wrapper to easily access the Northern Corridor project
 database. The project was developed in order to analyse the potential
-impacts of the Northern Corridor on the Canadian economy and global maritime
-traffic. In order to do so, we took more than 20,000 ship voyages
+impact of the Northern Corridor on Canadian economy and global maritime
+traffic. In order to do so, we took more than 20 000 ship voyages
 passing through the Panama Canal and calculated their marine distances.
 
 To analyse the applicability and the profitability of the Canadian
-Northwest Passage, we took the same 20,000 routes and make them passed
+Northwest Passage, we took the same 20 000 routes and make them passed
 hypothetically through the Canadian Arctic. We then compared the
 distances to see which trips were shorter by the Northern Corridor.
 Distances are in nautical miles.
@@ -87,31 +87,44 @@ A user needs to enter the ISO code of a country. To have access to this
 code, the following function provides this information.
 
 ``` r
-corridor_country() # A list of all countries will be produced
+corridor_country() # A list of all countries ISO code will be produced
 
 corridor_country(country = "Canada") # The ISO code for Canada will be produced
 
 corridor_country("Canada") # The ISO code for Canada will be produced
 ```
 
-### Step 2: Getting the data
+### Step 2: Getting the port’s name
+
+To have access to the ports included in the data, the following function
+provides this information.
+
+``` r
+corridor_port() # A list of all existing ports will be produced
+
+corridor_port(country = "HOUS") # The port's name containing HOUS will be produced
+
+corridor_port("HOUSTON") # The port's name containing HOUS will be produced
+```
+
+### Step 3: Getting the data
 
 Once the user knows the ISO code , s.he can collect the data in a very
 easy way through this function:
 
-Be careful, you must put the empty arguments ("") to collect the
-data\!
+Be careful, you must put the empty arguments ("") to collect the data\!
 
 ``` r
 corridor_data(country = "", port = "") # It generates a data frame of the complete dataset
 
-corridor_data(country = "CAN", port = "") # It generates a data frame of the all the ships voyages inclunding a Canadian port
+corridor_data(country = "CAN", port = "") # It generates a data frame of all the ships voyages containing a Canadian port
 
-corridor_data(country = "", port = "HOUSTON") # It generates a data frame of the all the ships voyages inclunding Houston.
+corridor_data(country = "", port = "HOUSTON") # It generates a data frame of all the ships voyages containing Houston.
 ```
 
 ### Acknowledgments
 
 The author would like to thank the Center for Interuniversity Research
 and Analysis of Organizations (CIRANO, Montreal) for its support, as
-well as Marine Leroi and Martin Paquette at CIRANO. The usual caveats apply.
+well as Thibault Senegas, Marine Leroi and Martin Paquette at SKEMA
+Global Lab in AI. The usual caveats apply.
