@@ -121,10 +121,9 @@ corridoR_countries_natural_language <- readr::read_csv(csv_file)
 
 #' corridor_port
 #'
-#' @description This function allows you to find and search port's name included in the Northern Corridor data.
+#' @description This function allows you to find and search port's name included in the Northern Corridor data. 
 #' If no argument is filed, all ports included in the Northern Corridor data will be displayed.
-#'
-#'
+#' 
 #' @param port The name of the port
 #'
 #' @return Port's name included in Northern Corridor data
@@ -134,9 +133,15 @@ corridoR_countries_natural_language <- readr::read_csv(csv_file)
 #'myport <- corridor_port()
 #'myport <- corridor_port(port = "HOUSTON")
 #'myport <- corridor_port("HOUSTON")
-#'
-#'
-#'
+
+corridor_port <- function(port) {
+  
+  if (missing(port)) {
+    corridoR_ports_natural_language
+  } else {
+    corridoR_ports_natural_language[grep(port, corridoR_ports_natural_language$port, ignore.case = TRUE), ]
+  }
+}
 
 pp1 <- unique(data[2:3])
 colnames(pp1) <- c("port", "country")
@@ -151,15 +156,4 @@ corridoR_ports_natural_language <- dplyr::bind_rows(pp1, pp2)
 corridoR_ports_natural_language <- dplyr::bind_rows(corridoR_ports_natural_language, np1)
 corridoR_ports_natural_language <- dplyr::bind_rows(corridoR_ports_natural_language, np2)
 corridoR_ports_natural_language <- unique(corridoR_ports_natural_language)
-
-corridor_port <- function(port) {
-  
-  if (missing(port)) {
-    corridoR_ports_natural_language
-  } else {
-    corridoR_ports_natural_language[grep(port, corridoR_ports_natural_language$port, ignore.case = TRUE), ]
-  }
-}
-
-
 
