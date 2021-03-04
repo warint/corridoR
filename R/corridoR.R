@@ -15,7 +15,6 @@
 #'
 #' @import dplyr
 #' @import stringr
-#' @import reshape2
 #' @import magrittr
 #' @import curl
 #'

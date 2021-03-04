@@ -115,11 +115,13 @@ easy way through this function:
 Be careful, you must put the empty arguments ("") to collect the data\!
 
 ``` r
-corridor_data(country = "", port = "") # It generates a data frame of the complete dataset
+corridor_data() # It generates a data frame of the complete dataset
 
-corridor_data(country = "CAN", port = "") # It generates a data frame of all the ships voyages containing a Canadian port
+corridor_data(country = "CAN") # It generates a data frame of all the ships voyages containing a Canadian port
 
-corridor_data(country = "", port = "HOUSTON") # It generates a data frame of all the ships voyages containing Houston.
+corridor_data(port = "QUEBEC") # It generates a data frame of all the ships voyages containing Houston.
+
+corridor_data(country = "CAN", port = "QUEBEC") # It generates a data frame of all the ships voyages containing the country Canada and the port Quebec.
 ```
 
 ### Acknowledgments

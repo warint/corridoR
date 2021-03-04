@@ -9,7 +9,6 @@ Description: CorridoR is a wrapper for the Northern Canadian Corridor data.
 Imports: 
     dplyr,
     stringr,
-    reshape2,
     magrittr,
     readr,
     curl

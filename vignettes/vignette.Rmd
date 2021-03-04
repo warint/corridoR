@@ -111,18 +111,15 @@ Once the user knows the ISO code , s.he can collect the data in a very easy way 
 Be careful, you must put the empty arguments ("") to collect the data!
 
 ```{r,eval=FALSE}
-corridor_data(country = "", port = "") # It generates a data frame of the complete dataset
+corridor_data() # It generates a data frame of the complete dataset
 
-corridor_data(country = "CAN", port = "") # It generates a data frame of all the ships voyages containing a Canadian port
+corridor_data(country = "CAN") # It generates a data frame of all the ships voyages containing a Canadian port
 
-corridor_data(country = "", port = "HOUSTON") # It generates a data frame of all the ships voyages containing Houston.
+corridor_data(port = "QUEBEC") # It generates a data frame of all the ships voyages containing Houston.
+
+corridor_data(country = "CAN", port = "QUEBEC") # It generates a data frame of all the ships voyages containing the country Canada and the port Quebec.
 ```
 
 ### Acknowledgments
 
 The author would like to thank the Center for Interuniversity Research and Analysis of Organizations (CIRANO, Montreal) for its support, as well as Thibault Senegas, Marine Leroi and Martin Paquette at SKEMA Global Lab in AI. The usual caveats apply.
-
-
-
-
-
