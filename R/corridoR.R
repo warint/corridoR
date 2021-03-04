@@ -32,8 +32,8 @@
 
 # Function 1
 
-corridor_data <- function(country = country_code,
-                         port = port_name){
+corridor_data <- function(country = "",
+                         port = ""){
   out <- data %>%
     dplyr::filter_all(any_vars(str_detect(., pattern = country)))  %>%
     dplyr::filter_all(any_vars(str_detect(., pattern = port)))
@@ -49,29 +49,6 @@ path <- file.path(tempdir(), "temp.csv")
 curl::curl_download(url, path)
 csv_file <- file.path(paste0(tempdir(), "/temp.csv"))
 data <- readr::read_csv(csv_file)
-
-# Creating the default values for the function query
-# IF an entry is missing, all the observations of this variable will be displayed
-
-data_long_country <- base::unique(data[,c(4,9,14,19)])
-
-data_long_country <- reshape2::melt(data_long_country,measure.vars = colnames(data_long_country)[1:ncol(data_long_country)],
-               variable.name = "var_indicator",
-               value.name = "country_code")
-
-data_long_country$var_indicator <- NULL
-data_long_country <- base::unique(data_long_country)
-country_code <- data_long_country$country_code
-
-
-data_long_port <- base::unique(data[,c(2,7,12,17)])
-
-data_long_port <- reshape2::melt(data_long_port,measure.vars = colnames(data_long_port)[1:ncol(data_long_port)],
-                                    variable.name = "var_indicator",
-                                    value.name = "port_name")
-data_long_port$var_indicator <- NULL
-data_long_port <- base::unique(data_long_port)
-port_name <- data_long_port$port_name
 
 utils::globalVariables(c("."))
 

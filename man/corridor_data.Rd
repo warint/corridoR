@@ -4,7 +4,7 @@
 \alias{corridor_data}
 \title{corridoR}
 \usage{
-corridor_data(country = country_code, port = port_name)
+corridor_data(country = "", port = "")
 }
 \arguments{
 \item{country}{Countries' ISO code.}
