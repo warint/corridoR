@@ -49,7 +49,7 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="articles/vignette.html">corridoR</a>
+      <a href="articles/vignette.html">vignette</a>
     </li>
   </ul>
 </li>
@@ -143,16 +143,18 @@
 <p>Once the user knows the ISO code , s.he can collect the data in a very easy way through this function:</p>
 <p>Be careful, you must put the empty arguments ("") to collect the data!</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="reference/corridor_data.html">corridor_data</a></span><span class="op">(</span>country <span class="op">=</span> <span class="st">""</span>, port <span class="op">=</span> <span class="st">""</span><span class="op">)</span> <span class="co"># It generates a data frame of the complete dataset</span>
+<code class="sourceCode R"><span class="fu"><a href="reference/corridor_data.html">corridor_data</a></span><span class="op">(</span><span class="op">)</span> <span class="co"># It generates a data frame of the complete dataset</span>
 
-<span class="fu"><a href="reference/corridor_data.html">corridor_data</a></span><span class="op">(</span>country <span class="op">=</span> <span class="st">"CAN"</span>, port <span class="op">=</span> <span class="st">""</span><span class="op">)</span> <span class="co"># It generates a data frame of all the ships voyages containing a Canadian port</span>
+<span class="fu"><a href="reference/corridor_data.html">corridor_data</a></span><span class="op">(</span>country <span class="op">=</span> <span class="st">"CAN"</span><span class="op">)</span> <span class="co"># It generates a data frame of all the ships voyages containing a Canadian port</span>
 
-<span class="fu"><a href="reference/corridor_data.html">corridor_data</a></span><span class="op">(</span>country <span class="op">=</span> <span class="st">""</span>, port <span class="op">=</span> <span class="st">"HOUSTON"</span><span class="op">)</span> <span class="co"># It generates a data frame of all the ships voyages containing Houston.</span></code></pre></div>
+<span class="fu"><a href="reference/corridor_data.html">corridor_data</a></span><span class="op">(</span>port <span class="op">=</span> <span class="st">"QUEBEC"</span><span class="op">)</span> <span class="co"># It generates a data frame of all the ships voyages containing Houston.</span>
+
+<span class="fu"><a href="reference/corridor_data.html">corridor_data</a></span><span class="op">(</span>country <span class="op">=</span> <span class="st">"CAN"</span>, port <span class="op">=</span> <span class="st">"QUEBEC"</span><span class="op">)</span> <span class="co"># It generates a data frame of all the ships voyages containing the country Canada and the port Quebec.</span></code></pre></div>
 </div>
 <div id="acknowledgments" class="section level3">
 <h3 class="hasAnchor">
 <a href="#acknowledgments" class="anchor"></a>Acknowledgments</h3>
-<p>The author would like to thank the Center for Interuniversity Research and Analysis of Organizations (CIRANO, Montreal) for its support, as well as Thibault Senegas, Marine Leroi and Martin Paquette at SKEMA Global Lab in AI. The usual caveats apply.</p>
+<p>The author would like to thank the Center for Interuniversity Research and Analysis of Organizations (CIRANO, Montreal) for its support, as well as Thibault Senegas, Marine Leroi and Martin Paquette. The usual caveats apply.</p>
 </div>
 </div>
 </div>

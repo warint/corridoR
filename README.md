@@ -4,7 +4,6 @@
 # corridoR
 
 <!-- badges: start -->
-
 <!-- badges: end -->
 
 ## Overview
@@ -112,7 +111,7 @@ corridor_port("HOUSTON") # The port's name containing HOUS will be produced
 Once the user knows the ISO code , s.he can collect the data in a very
 easy way through this function:
 
-Be careful, you must put the empty arguments ("") to collect the data\!
+Be careful, you must put the empty arguments ("") to collect the data!
 
 ``` r
 corridor_data() # It generates a data frame of the complete dataset
@@ -128,5 +127,5 @@ corridor_data(country = "CAN", port = "QUEBEC") # It generates a data frame of a
 
 The author would like to thank the Center for Interuniversity Research
 and Analysis of Organizations (CIRANO, Montreal) for its support, as
-well as Thibault Senegas, Marine Leroi and Martin Paquette at SKEMA
-Global Lab in AI. The usual caveats apply.
+well as Thibault Senegas, Marine Leroi and Martin Paquette. The usual
+caveats apply.
