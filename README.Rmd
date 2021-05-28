@@ -21,9 +21,13 @@ knitr::opts_chunk$set(
 
 ## Overview
 
-corridoR is an R wrapper to easily access the Northern Corridor project database. The project was developed in order to analyse the potential impact of the Northern Corridor on Canadian economy and global maritime traffic. In order to do so, we took more than 20 000 ship voyages passing through the Panama Canal and calculated their marine distances.
+Although maritime transport has lost its importance for the transport of people, it has become the most important mode of transport for goods. Indeed, approximately 80% of global merchandise is traded by sea. As an essential part of international trade, commercial shipping relies on strategic trade routes to move goods efficiently.
 
-To analyse the applicability and the profitability of the Canadian Northwest Passage, we took the same 20 000  routes and make them passed hypothetically through the Canadian Arctic. We then compared the distances to see which trips were shorter by the Northern Corridor. Distances are in nautical miles.
+corridoR is an R wrapper to illustrate the reality of world maritime trade by offering researchers and students access to real maritime distances between the different major ports of the planet.  Too often, distances are calculated as the crow flies, but CorridoR uses existing sea routes to make its calculations. 
+
+The corridoR project was also developed to analyze the potential impact of the Northern Corridor on the Canadian economy and global maritime traffic. We took more than 20 000 ship voyages passing through the Panama Canal and calculated their marine distances.
+
+To analyze the applicability and the profitability of the Canadian Northwest Passage, we took the same 20 000  routes and make them passed hypothetically through the Canadian Arctic. We then compared the distances to see which trips were shorter by the Northern Corridor. Distances are in nautical miles.
 
 ## Data Summary
 
